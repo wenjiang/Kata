@@ -1,0 +1,94 @@
+﻿总共花费0小时57分钟39秒
+public class Sort {
+    
+public static int[] sort(int[] unsortedArray) {
+        
+int length = unsortedArray.length;
+
+int minIndex = 0;
+
+for (int i = 0;
+
+i < length - 1;
+
+++i) {
+        
+int temp = unsortedArray[i];
+
+for (int j = i + 1;
+
+j < length;
+
+++j) {
+        
+if (temp >= unsortedArray[j]) {
+        
+temp = unsortedArray[j];
+
+minIndex = j;
+
+}
+
+}
+
+unsortedArray[minIndex] = unsortedArray[i];
+
+System.out.println(i + ":" + unsortedArray[minIndex]);
+
+unsortedArray[i] = temp;
+
+System.out.println(i + ":" + unsortedArray[i]);
+
+}
+
+for (int number : unsortedArray) {
+        
+System.out.println(number);
+
+}
+
+return unsortedArray;
+
+}}
+
+经过研究，发现该排序的算法只能到5个元素的数组，超过就不能发挥作用了。算法的思想是从数组的第一个元素开始，向后遍历数组，如果后面的元素小于第一个元素，进行替换。
+总共花费0小时5分钟50秒
+public class Sort {
+    
+public static int[] sort(int[] unsortedArray) {
+        
+int length = unsortedArray.length;
+
+for (int i = 0;
+
+i < length - 1;
+
+++i) {
+        
+int temp = unsortedArray[i];
+
+for (int j = i + 1;
+
+j < length;
+
+++j) {
+        
+if (temp >= unsortedArray[j]) {
+        
+unsortedArray[i] = unsortedArray[j];
+
+unsortedArray[j] = temp;
+
+temp = unsortedArray[i];
+
+}
+
+}
+
+}
+
+
+return unsortedArray;
+
+}}
+之所以会出现上面的问题，是因为我并没有将最小值更新，也就是更新temp的值。
