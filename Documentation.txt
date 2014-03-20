@@ -1,0 +1,14 @@
+﻿English:
+    This program is mainly used to make Kata practice, is now the subject of how to design a Sort, in the case of large data execution speed than Collections.sort (). 
+  After you copy the entire project and import, if you want to start practicing, you can first run TimeLog, it saves the start time to time.txt (when the test successfully, it will read the start time in order to calculate the time spent) . 
+  If you want to test, first write functional code, and then Test.java in this position:              new Test () saveCodeIntoFile ("Sort").; 
+Fill function code file name, if the function code to pass the test, they will be saved in order to function code code named txt file. 
+  After writing test code in KataTest.java then is run Test.java. Well, now sit and other code through, otherwise an error. . .    
+
+Chinese:
+    这个程序主要是用来做Kata练习，现在的题目就是如何设计一个Sort，在大数据的情况下执行速度超越Collections.sort()。
+    将整个工程拷贝并导入后，如果想要开始练习，可以先运行TimeLog,它会将开始时间保存到time.txt中（当测试成功通过后，就会读取开始时间以便计算所花的时间）。
+    如果想要测试，先编写功能代码，然后在Test.java中该位置：
+              new Test().saveCodeIntoFile("Sort");
+填入功能代码的文件名，如果功能代码通过测试，就会将代码保存在以功能代码命名的txt文件中。
+    之后在KataTest.java中编写测试代码，然后就是运行Test.java。好了，现在就坐等代码通过，否则就会报错。。。
